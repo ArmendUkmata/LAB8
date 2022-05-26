@@ -41,5 +41,6 @@ jobs:
       run: |
         docker build -t armend:$IMAGE_TAG .
         docker tag armend:$IMAGE_TAG 313422618945.dkr.ecr.eu-central-1.amazonaws.com/armend:$IMAGE_TAG
-        docker tag armend:latest 313422618945.dkr.ecr.eu-central-1.amazonaws.com/armend:latest
+        docker tag armend:$IMAGE_TAG 313422618945.dkr.ecr.eu-central-1.amazonaws.com/armend:latest
         docker push 313422618945.dkr.ecr.eu-central-1.amazonaws.com/armend:$IMAGE_TAG
+        docker push 313422618945.dkr.ecr.eu-central-1.amazonaws.com/armend:$latest
